@@ -1,0 +1,12 @@
+<div class="card text-white bg-primary" *ngIf="recvgift" >
+  <div class="card-body">
+    <h5 class="card-title">感谢
+      <img src="../../../assets/default.jpg" alt="" style="width:32px;height: 32px" class="rounded-circle" #head>
+      <span class="username_pre" *ngIf="recvgift.pre">[{{recvgift.pre}}]</span>
+      <span class="text-warning"> {{recvgift.username}} </span>
+      <span class="username_post" *ngIf="recvgift.post"> | {{recvgift.post}}</span>
+      赠送的</h5>
+    <p class="card-text">{{recvgift.gift}} x {{recvgift.count}}</p>
+
+  </div>
+</div>

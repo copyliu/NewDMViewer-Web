@@ -1,0 +1,13 @@
+<div class="d-flex flex-row" *ngIf="recvmsg">
+<div class="p-2 " >
+  <img src="../../../assets/default.jpg" alt="" style="width:32px;height: 32px" class="rounded-circle" #head>
+</div>
+  <div class="p-2" >
+    <span class="username_pre" *ngIf="recvmsg.pre">[{{recvmsg.pre}}]</span>
+    <span class="username">{{recvmsg.username}}</span>
+    <span class="username_post" *ngIf="recvmsg.post"> | {{recvmsg.post}}</span>
+  </div>
+  <div class="flex-grow-1 p-2" >
+    {{recvmsg.msg}}
+  </div>
+</div>
